@@ -13,7 +13,7 @@ function letterCombinations(input_digit) {
 		  1: "1"
 	};
 
-	var stringArray = [];
+	var stringArray = [''];
 
 	for(let i = 0; i < input_digit.length; i++){
 		let digit = input_digit[i];
