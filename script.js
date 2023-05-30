@@ -14,6 +14,22 @@ function letterCombinations(input_digit) {
 	};
 
 	var stringArray = [];
+
+	for(let i = 0; i < input_digit.length; i++){
+		let digit = input_digit[i];
+		let letters = mapping[digit];
+		let newCombination = [];
+
+		for(let j = 0; j < stringArray.length; j++){
+			var combination = stringArray[j];
+
+			for(let k = 0; k < letters.length; k++){
+				newCombination.push(combination + letters[k]);
+			}
+		}
+		stringArray = newombination;
+	}
+	return stringArray;
 	
 }
 
