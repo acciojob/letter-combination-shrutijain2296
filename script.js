@@ -27,7 +27,7 @@ function letterCombinations(input_digit) {
 				newCombination.push(combination + letters[k]);
 			}
 		}
-		stringArray = newombination;
+		stringArray = newCombinationombination;
 	}
 	return stringArray;
 	
